@@ -36,6 +36,8 @@ gem 'rack-cors', '~> 1.0.3', require: 'rack/cors'
 # Use for DoS attacks
 gem 'rack-attack'
 
+gem 'activeadmin'
+
 gem 'health_check', '~> 3.0'
 
 group :development do
