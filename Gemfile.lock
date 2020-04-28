@@ -53,6 +53,8 @@ GEM
       ransack (~> 2.1, >= 2.1.1)
       sassc-rails (~> 2.1)
       sprockets (>= 3.0, < 4.1)
+    activeadmin_latlng (1.5.0)
+      activeadmin
     activejob (6.0.2.2)
       activesupport (= 6.0.2.2)
       globalid (>= 0.3.6)
@@ -402,6 +404,7 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers (~> 0.10)
   activeadmin
+  activeadmin_latlng
   awesome_print
   brakeman
   bullet
