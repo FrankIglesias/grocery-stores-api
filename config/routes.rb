@@ -2,6 +2,6 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   root to: 'application#index'
-  resources :grocery_stores
+  resources :grocery_stores, only: [:index, :show]
   mount Sidekiq::Web, at: 'sidekiq'
 end
