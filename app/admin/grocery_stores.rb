@@ -7,15 +7,21 @@ ActiveAdmin.register GroceryStore do
       row :photo
       row :lat
       row :lng
+      row :email
       table_for grocery_store.products do
         column 'Products' do |product|
           link_to product.name, admin_product_path(product)
         end
-        column 'Quantity' do |product|
-          span product.quantity
-        end
+        column :quantity
       end
     end
+  end
+
+  index do
+    column :id
+    column :name
+    column :email
+    actions
   end
 
   form do |f|
@@ -28,4 +34,8 @@ ActiveAdmin.register GroceryStore do
     end
     f.actions
   end
+
+  filter :id_equals
+  filter :name
+  filter :email
 end
